@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use Siftory in your work, please cite this repository."
+title: "Siftory"
+version: "0.1.0"
+date-released: 2026-08-20
+license: MIT
+authors:
+  - family-names: "CYJIN"
+repository-code: "https://github.com/shadecyj/siftory"

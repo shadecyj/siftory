@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/domain" },
+    { "path": "packages/contracts" },
+    { "path": "packages/fixtures" },
+    { "path": "packages/persistence" },
+    { "path": "packages/retrieval" },
+    { "path": "packages/model-gateways" },
+    { "path": "packages/trust" },
+    { "path": "packages/presentation" },
+    { "path": "packages/agent" },
+    { "path": "apps/web" }
+  ]
+}

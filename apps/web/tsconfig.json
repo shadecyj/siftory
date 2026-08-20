@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [{ "name": "next" }]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"],
+  "references": [
+    { "path": "../../packages/domain" },
+    { "path": "../../packages/contracts" },
+    { "path": "../../packages/fixtures" },
+    { "path": "../../packages/agent" },
+    { "path": "../../packages/retrieval" },
+    { "path": "../../packages/model-gateways" },
+    { "path": "../../packages/persistence" },
+    { "path": "../../packages/trust" },
+    { "path": "../../packages/presentation" }
+  ]
+}

@@ -1,0 +1,21 @@
+[package]
+name = "searchos-desktop"
+version = "0.1.0"
+description = "Evidence-first personal search workspace"
+authors = ["Siftory"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+url = "2"
+# Windows Credential Manager is the only persistent credential store used by
+# the desktop runtime.  Do not replace it with a plaintext Tauri Store.
+keyring = { version = "3.6.3", default-features = false, features = ["windows-native"] }
+reqwest = { version = "0.12.28", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+time = { version = "0.3.55", features = ["formatting"] }
+zeroize = "1.8"

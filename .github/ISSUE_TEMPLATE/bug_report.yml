@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible problem in Siftory.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Siftory. Please do not include API keys, prompts containing private data, or personal Search Notes.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Include the desktop version or commit SHA if known.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Windows desktop app
+        - Source-run web app
+        - Replay mode
+        - Live search mode
+        - Library / Search Note
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Redact credentials, private URLs, and personal content before submitting.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, logs, or additional context
+      description: Optional. Do not upload screenshots that show credentials or personal notes.

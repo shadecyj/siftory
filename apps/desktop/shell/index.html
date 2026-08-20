@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Siftory</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --canvas: #f4f5f7;
+        --surface: #ffffff;
+        --text: #17181a;
+        --muted: #636872;
+        --accent: #2f6bff;
+        --border: #dfe2e7;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root { --canvas: #0c0d0f; --surface: #141619; --text: #f2f4f7; --muted: #a0a6b0; --accent: #6d96ff; --border: #2a2e34; }
+      }
+      * { box-sizing: border-box; }
+      body { align-items: center; background: var(--canvas); color: var(--text); display: flex; font-family: "Segoe UI", system-ui, sans-serif; justify-content: center; margin: 0; min-height: 100vh; }
+      main { align-items: center; display: grid; gap: 18px; justify-items: center; max-width: 360px; padding: 28px; text-align: center; }
+      .mark { align-items: center; background: var(--text); border-radius: 10px; color: var(--surface); display: grid; font-size: 20px; font-weight: 800; height: 42px; place-items: center; width: 42px; }
+      h1 { font-size: 19px; letter-spacing: -0.02em; margin: 0; }
+      p { color: var(--muted); font-size: 14px; line-height: 1.55; margin: -8px 0 0; }
+      .progress { background: color-mix(in srgb, var(--border) 72%, transparent); border-radius: 999px; height: 3px; overflow: hidden; width: 180px; }
+      .progress::after { animation: run 1.1s ease-in-out infinite; background: var(--accent); content: ""; display: block; height: 100%; transform: translateX(-100%); width: 48%; }
+      @keyframes run { to { transform: translateX(240%); } }
+      @media (prefers-reduced-motion: reduce) { .progress::after { animation: none; transform: translateX(0); width: 100%; } }
+    </style>
+  </head>
+  <body>
+    <main aria-live="polite">
+      <div class="mark" aria-hidden="true">S</div>
+      <h1>Siftory 正在启动</h1>
+      <p>正在准备本地搜索与知识库运行时。</p>
+      <div class="progress" role="progressbar" aria-label="正在启动本地运行时"></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "loopback-workspace-capability",
+  "description": "The external loopback Siftory workspace may only open the separately sandboxed credentials panel. It cannot read, save, test, apply, clear, or receive credentials.",
+  "windows": ["main"],
+  "platforms": ["windows"],
+  "local": false,
+  "remote": {
+    "urls": ["http://127.0.0.1:*"]
+  },
+  "permissions": ["allow-open-credentials-panel"]
+}

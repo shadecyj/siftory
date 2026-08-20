@@ -1,0 +1,12 @@
+{
+  "name": "@searchos/agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@searchos/contracts": "*", "@searchos/domain": "*", "@searchos/presentation": "*",
+    "@searchos/retrieval": "*", "@searchos/trust": "*"
+  },
+  "devDependencies": { "@searchos/model-gateways": "*" }
+}

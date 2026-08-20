@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@searchos/domain": ["packages/domain/src/index.ts"],
+      "@searchos/contracts": ["packages/contracts/src/index.ts"],
+      "@searchos/fixtures": ["packages/fixtures/src/index.ts"],
+      "@searchos/persistence": ["packages/persistence/src/index.ts"],
+      "@searchos/retrieval": ["packages/retrieval/src/index.ts"],
+      "@searchos/model-gateways": ["packages/model-gateways/src/index.ts"],
+      "@searchos/trust": ["packages/trust/src/index.ts"],
+      "@searchos/presentation": ["packages/presentation/src/index.ts"],
+      "@searchos/agent": ["packages/agent/src/index.ts"]
+    }
+  }
+}

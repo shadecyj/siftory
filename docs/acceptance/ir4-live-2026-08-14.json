@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-14T09:16:38.871Z",
+  "searchProvider": "Tavily",
+  "modelProvider": "DeepSeek",
+  "model": "deepseek-chat",
+  "question": "DeepSeek API 如何启用 JSON Output？",
+  "terminalState": "COMPLETED",
+  "claims": 6,
+  "evidence": 7,
+  "sources": 4,
+  "primarySources": 4,
+  "confidence": "HIGH",
+  "sourceHosts": [
+    "api-docs.deepseek.com",
+    "docs.deepinfra.com"
+  ],
+  "sourceUrlsValidated": true,
+  "exactAnchors": true,
+  "trustGuards": true,
+  "suggestedCategory": "AI_DATA",
+  "finalCategory": "LEARNING_RESEARCH",
+  "favorite": true,
+  "restartReopen": true,
+  "durationSeconds": 42,
+  "redaction": "No API keys, source body, prompts, hidden reasoning, run IDs, or note IDs are stored."
+}

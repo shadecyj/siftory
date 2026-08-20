@@ -1,0 +1,29 @@
+{
+  "name": "@searchos/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@searchos/contracts": "*",
+    "@searchos/domain": "*",
+    "@searchos/fixtures": "*",
+    "@searchos/agent": "*",
+    "@searchos/retrieval": "*",
+    "@searchos/model-gateways": "*",
+    "@searchos/persistence": "*",
+    "@searchos/trust": "*",
+    "@searchos/presentation": "*",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3"
+  }
+}
