@@ -32,7 +32,7 @@
     "security:scan:release": "node ./scripts/release-security-scan.mjs"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.1",
     "@tauri-apps/cli": "^2.11.4",
     "@types/node": "^24.10.1",
     "drizzle-kit": "^0.31.8",
