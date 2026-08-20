@@ -36,7 +36,7 @@
     "@tauri-apps/cli": "^2.11.4",
     "@types/node": "^24.10.1",
     "drizzle-kit": "^0.31.8",
-    "eslint": "^9.39.1",
+    "eslint": "^10.8.1",
     "globals": "^16.5.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
